@@ -1,0 +1,1 @@
+This program was written to understand MEN stack, however A-angular would be standard to use with website development. Here scripts are present to work with "ejs" and "node.js" but there is no integration of MongoDB yet. I also included leaflet.js- an interactive mapping library in javascript for displaying mapping stuff.
