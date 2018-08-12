@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Terra Mapping</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Including minified jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css\index.css">
+</head>
+  <body>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Welcome to Terra Mapping, enter your address within the address space and get started!</p>
+        <input type="text" placeholder="Typing..." name="searchAddress" id="searchAddressText1">
+      </div>
+    </div>
+    <div id="searchBar" class="panel panel-primary">
+      <div id="searchHeader">
+        Terra Mapping
+      </div>
+      <div id="searchAddress">
+        <input type="text" placeholder="Typing..." name="searchAddress" id="searchAddressText">
+      </div>
+    </div>
+    <div class="col-xs-3" id="controlPanel">
+        This is the control panel, many more information on this side!
+    </div>
+    <div class="col-xs-9" id="mapArea">
+      <div id="breadcrumbDiv">
+        <ol class="breadcrumb">
+          <li> <a href="#" id="administrative_level2">administrative_level2</a> </li>
+          <li> <a href="#" id="administrative_level1">administrative_level1</a> </li>
+          <li> <a href="#" id="postal_code">postal_code</a> </li>
+          <li> <a href="#" id="sublocality">sublocality</a> </li>
+          <li> <a href="#" id="locality">locality</a> </li>
+        </ol>
+      </div>
+      <div id="map"></div>
+      <div id="sidePanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" style="margin-top: 15px;">About</a>
+      </div>
+      <div id="sidePanelMain">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    </div>
+    <script src="js/index.js">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIZtPI7_UKafTRgrTZOR4nNmNa53958d4&libraries=places&callback=initMap"
+    async defer></script>
+  </body>
+</html>
