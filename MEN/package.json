@@ -1,0 +1,18 @@
+{
+  "name": "leaflet",
+  "version": "1.0.0",
+  "description": "This is package installaton for terra mapping",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Heta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.0",
+    "npm": "^6.1.0"
+  }
+}
